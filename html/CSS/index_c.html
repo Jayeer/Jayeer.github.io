@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <link rel="stylesheet" href="../../css/Style_C.css">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+              integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+              integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+                integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+                crossorigin="anonymous" defer></script>
+    </head>
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a href="#" class="navbar-brand">Справочник по CSS
+                    </a>
+                </div>
+
+                <div>
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Главная</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <body>
+        <div class="container">
+            <div id="content">
+                <h4>Для начала о простых вещах:</h4><br>
+                <h2>Структура CSS кода</h2>
+                <p>Стандартная структура CSS кода выглядит вот так:</p>
+                <pre>
+                    селектор {
+                        свойство: значение;
+                    }
+                </pre>
+                <p>А если говорить простым языком , то так</p>
+                <pre>
+                    объект {
+                        параметр: значение;
+                    }
+                </pre>
+                <h2>Селекторы</h2>
+                <p><b>Селектор</b> указывает на какой либо объект.</p>
+                <hr>
+                <p>В виде селектора может выступать<b> класс</b> , он указывает на класс и записывается так:</p><br>
+                <pre>.название_класса</pre>
+                <p>Что-бы обозначить класс тега в HTML нужно внутри него написать <b>class="Название класса"</b></p>
+                <hr>
+                <p>Также как селектор можно использовать<b> id. </b>Запись:</p>
+                <pre>#id</pre>
+                <p>Что-бы обозначить id тега в HTML нужно внутри него написать <b>id="id тега"</b></p>
+                <p class="span-shadow">
+                    <a href="../../index.html">
+                        <span>Справочник по HTML</span>
+                    </a>
+                </p>
+                <hr>
+                <p>Селекторы можно перечислять через запятю.Например:</p>
+                <pre>
+                    A , B , C {
+
+                    }
+                </pre>
+                <hr>
+                <p></p>
+                <hr>
+                <p>Также в роли селектора можно использовать знак <b>*</b>,
+                    он значает что свойства применятся ко свем тегам на старнице.</p>
+                <h4>Псевдоклассы</h4>
+                <p>К селектору также можно преписать псевдокласс , таких классов есть несколько:</p>
+                <ul>
+                    <li>hover - означает что свойства будут применены к ссылке когда на неё наведен курсор мыщи.</li>
+                    <li>visited - означает что свойства будут применены к просмотренной ссылке</li>
+                    <li>active - означает что свойства будут применены к ссылке в момент нажатия.</li>
+                    <li>nth-child(n) - означает что свойства будут применены к
+                        дочернему(вложенному) тегу под порядковым номером n.</li>
+                </ul>
+                <p>Синтаксис:</p>
+                <pre>
+                    тег:псевдокласс {
+
+                    }
+                </pre>
+                <h2>Свойства</h2>
+                <p>Свойства отвечают за разные параметры элементов , напрмер размер , цвет или позицию.</p>
+                <p>Свойства можно перечислять с ряд . но гораздо удобней делать это в столбик.</p>
+                <p>После каждого свойства ставится точка с запятой (;).</p>
+                <h3>Теперь самые часто используемые свойства</h3>
+                <h4>Текст</h4>
+                <ul>
+                    <li>color - отвечает за цвет текста.</li>
+                    <li>font-family - шрифт.</li>
+                    <li>line-height - расстояние между строк.</li>
+                    <li>font-size - размер шрифта.</li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <h4>Фон</h4>
+                <ul>
+                    <li>background - фон.</li>
+                    <li>background-color - цвет фона.</li>
+                </ul>
+                <h4>Позиции элементов</h4>
+                <ul>
+                    <li>margin - отступ со всех сторон.</li>
+                    <li>margin-left | right | bottom | top - отступ с орпеделенной стороны.</li>
+                    <li>text-align - сторона расположения текста (например справа или снизу).</li>
+                    <li>float - сторона расположения элемента.</li>
+                </ul>
+                <h4>Другие свойства</h4>
+                <ul>
+                    <li>transform - исполбзуется для трансформации
+                        объекта (например увеличения , вращения , движения и т.д.)</li>
+                    <li>height - высота</li>
+                    <li>width - ширина</li>
+                    <li>position - позиция (например фиксированая или изменяемая).</li>
+                </ul>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <div class="container-fluid">
+            <p>
+                Made by Ilya Jay in 2018.
+            </p>
+            <a href="#">Copyright</a>
+        </div>
+    </footer>
+</html>

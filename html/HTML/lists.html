@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="HTML, META, метатег, тег">
+    <title>Справочник HTML</title>
+    <link rel="stylesheet" href="../../css/Style.css">
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<header>
+    <!--Navbar-->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="#" class="navbar-brand">Справочник по HTML
+                </a>
+            </div>
+
+            <div>
+                <ul class="nav navbar-nav">
+                    <li><a href="../../index.html">Главная</a></li>
+                    <li class="active"><a href="#">Списки</a></li>
+                    <li><a href="media.html">Медиа</a></li>
+                    <li><a href="form.html">Формы</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<body>
+
+<h1 class="header">Списки</h1>
+<p>Тег<b> ul</b> нужен для создания ненумерованного списка.</p>
+<hr>
+<p>Тег <b>li</b> нужен для добавления элементов в список.</p>
+<hr>
+<p>Тег <b>ol </b>нужен для создания нумерованного списка.</p>
+<hr>
+<p>Есть 3 тега для обозначения терминов: <b>dl, dd и dt</b></p>
+<p>Тег <b>&ltdl&gt</b> - это контейнер.</p>
+<p class="span-shadow">
+    <a href="../CSS/index_c.html">
+        <span>Справочник по CSS</span>
+    </a>
+</p>
+<hr>
+<p>Тег <b>&ltdd&gt</b> - создаёт термин,</p>
+<hr>
+<p>А тег<b> &ltdt&gt</b> добавляет определение термина.</p>
+<hr>
+<p>Атрибут ненумерованного списка <b>type="disc"</b> добавляет диски перед каждым элементом списка.</p>
+<hr>
+<p>Атрибут ненумерованного списка<b>type="circle"</b> добавляет круг перед каждым элементом списка.</p>
+<hr>
+<p>Атрибут ненумерованного списка<b>type="square"</b> добавляет квадрат в начале каждого элемента списка.</p>
+<h2 class="header">Нумерованные списки</h2>
+<p>Атрибут нумерованного списка <b>type="1"</b> добавляет арабские цифры в начале каждого элемента списка.</p>
+<hr>
+<p>Атрибут нумерованного списка <b>type="I"</b> добавляет заглавные римские цифры в начале каждого элемента списка.</p>
+<hr>
+<p>Атрибут нумерованного списка <b>type="i"</b> добавляет строчные римские цифры в начале каждого элемента списка.</p>
+<hr>
+<p>Атрибут нумерованного списка <b>reversed</b> добавляет перед элементами нумерацию в обратном порядке.</p>
+<hr>
+<p>Атрибут нумерованного списка <b>type="A"</b> добавляет заглавные латинские буквы в начале каждого элемента списка.</p>
+<hr>
+<p>Атрибут нумерованного списка <b>type="a"</b> добавляет строчные латинские буквы в начале каждого элемента списка.</p>
+<h2>Примеры использования выше перечисленых тегов</h2>
+<input type="button" id="btn_a" value="Показать пример"><a></a>
+<input type="button" id="btn_r" value="Скрыть пример"><a></a>
+<div id="ex">
+</div>
+<script>
+    $('#btn_a').click(function(){
+        $('#ex').append('</div><h3>Ненумерованные списки</h3>\n' +
+            '    <h4>Тип поумолчанию: диск</h4>\n' +
+            '    <ul type="disc" class="ulFirst">\n' +
+            '        <li>Яблоко</li>\n' +
+            '        <li>Банан</li>\n' +
+            '        <li>Груша</li>\n' +
+            '        <li>Ананас</li>\n' +
+            '    </ul>\n' +
+            '    <h4>Круг</h4>\n' +
+            '    <ul type="circle" id="ulTwo">\n' +
+            '        <li>Яблоко</li>\n' +
+            '        <li>Банан</li>\n' +
+            '        <li>Груша</li>\n' +
+            '    </ul>\n' +
+            '    <h4>Квадрат</h4>\n' +
+            '    <ul type="square">\n' +
+            '        <li>Яблоко</li>\n' +
+            '        <li>Банан</li>\n' +
+            '        <li>Груша</li>\n' +
+            '    </ul>\n' +
+            '    <h3>Нумерованные списки</h3>\n' +
+            '    <h4 >Тип поумолчанию: арабские цифры</h4>\n' +
+            '    <ol type="1" class="olFirst">\n' +
+            '        <li>Яблоко</li>\n' +
+            '        <li>Банан</li>\n' +
+            '        <li>Груша</li>\n' +
+            '    </ol>\n' +
+            '    <h4 > Указание атрибута start="Номер"</h4>\n' +
+            '    <ol type="1" start="4" id="tagline">\n' +
+            '        <li>Яблоко</li>\n' +
+            '        <li>Банан</li>\n' +
+            '        <li>Груша</li>\n' +
+            '    </ol>\n' +
+            '    <h4>Тип поумолчанию:\n' +
+            '        арабские цифры, в обратном порядке</h4>\n' +
+            '    <ol type="1" reversed class="olFirst">\n' +
+            '        <li>Яблоко</li>\n' +
+            '        <li>Банан</li>\n' +
+            '        <li>Груша</li>\n' +
+            '    </ol>\n' +
+            '    <h4>Римские заглавные цифры</h4>\n' +
+            '    <ol type="I" >\n' +
+            '        <li>Яблоко</li>\n' +
+            '        <li>Банан</li>\n' +
+            '        <li>Груша</li>\n' +
+            '    </ol>\n' +
+            '    <h4>Римские заглавные цифры, в обратном порядке</h4>\n' +
+            '    <ol type="I" reversed>\n' +
+            '        <li>Яблоко</li>\n' +
+            '        <li>Банан</li>\n' +
+            '        <li>Груша</li>\n' +
+            '    </ol>\n' +
+            '    <h4>Римские строчные цифры</h4>\n' +
+            '    <ol type="i" >\n' +
+            '        <li>Яблоко</li>\n' +
+            '        <li>Банан</li>\n' +
+            '        <li>Груша</li>\n' +
+            '    </ol>\n' +
+            '    <h4>Римские строчные цифры, в обратном порядке</h4>\n' +
+            '    <ol type="i" reversed>\n' +
+            '        <li>Яблоко</li>\n' +
+            '        <li>Банан</li>\n' +
+            '        <li>Груша</li>\n' +
+            '    </ol>\n' +
+            '    <h4>Заглавные латинские буквы</h4>\n' +
+            '    <ol type="A" >\n' +
+            '        <li>Яблоко</li>\n' +
+            '        <li>Банан</li>\n' +
+            '        <li>Груша</li>\n' +
+            '    </ol>\n' +
+            '    <h4>Заглавные латинские буквы, в обратном порядке</h4>\n' +
+            '    <ol type="A" reversed>\n' +
+            '        <li>Яблоко</li>\n' +
+            '        <li>Банан</li>\n' +
+            '        <li>Груша</li>\n' +
+            '    </ol>\n' +
+            '    <h4>Строчные латинские буквы</h4>\n' +
+            '    <ol type="a">\n' +
+            '        <li>Яблоко</li>\n' +
+            '        <li>Банан</li>\n' +
+            '        <li>Груша</li>\n' +
+            '    </ol>\n' +
+            '    <h4>Строчные латинские буквы, в обратном порядке</h4>\n' +
+            '    <ol type="a" reversed>\n' +
+            '        <li>Яблоко</li>\n' +
+            '        <li>Банан</li>\n' +
+            '        <li>Груша</li>\n' +
+            '    </ol>\n' +
+            '    <h4>Списки определений</h4>\n' +
+            '    <dl>\n' +
+            '        <dt>GIF</dt>\n' +
+            '        <dd><em>Формат графических файлов,\n' +
+            '            широко<i> применяемый при создании\n' +
+            '            </i>сайтов.\n' +
+            '            GIF использует 8-битный цвет и\n' +
+            '            эффективно сжимает\n' +
+            '            сплошные цветные области,\n' +
+            '            при этом сохраняя детали\n' +
+            '            изображения.</em>\n' +
+            '        </dd>\n' +
+            '        <dt>JPEG</dt>\n' +
+            '        <dd><em> формат графических файлов,\n' +
+            '            широко применяемый при создании\n' +
+            '            сайтов и хранения изображений.\n' +
+            '            JPEG поддерживает 24-битный цвет и\n' +
+            '            сохраняет\n' +
+            '            яркость и оттенки цветов в фотографиях.\n' +
+            '            Данный формат называют сжатием с потерями,\n' +
+            '            поскольку алгоритм JPEG выборочно\n' +
+            '            отвергает данные. Метод сжатия может\n' +
+            '            исказить\n' +
+            '            деталь в рисунке, особенно\n' +
+            '            содержащий текст или изображение с\n' +
+            '            чёткими краями.\n' +
+            '            Формат JPEG не поддерживает прозрачность;\n' +
+            '            когда вы сохраняете фотографию в формате\n' +
+            '            JPEG, прозрачные пиксели заполняются\n' +
+            '            определённым цветом. </em></dd>\n' +
+            '        <dt>PNG</dt>\n' +
+            '        <dd><em>Формат PNG создан как для улучшения,\n' +
+            '            так и для замены формата GIF\n' +
+            '            графическим форматом,\n' +
+            '            не требующим лицензии для использования.\n' +
+            '            В отличии от GIF,\n' +
+            '            у PNG есть поддержка альфа-канала и\n' +
+            '            возможность хранить\n' +
+            '            неограниченное количество цветов.\n' +
+            '            PNG сжимает данные без потерь,\n' +
+            '            что делает его очень удобным\n' +
+            '            для хранения промежуточных\n' +
+            '            версий обработки изображений.</em></dd>\n' +
+            '    </dl>\n' +
+            '    <h4>Добавление изображений на страницу</h4>\n' +
+            '    <img src="../../img/joda.jpg"\n' +
+            '         alt="starWars" width="300" height="200">');
+    });
+</script>
+<script>
+    $('#btn_r').click(function(){
+        $('#ex').empty();
+    });
+</script>
+<footer>
+    <a name="footer"></a>
+    <p> Создатель справочника: Ilya  &reg; 2018г.</p>
+    <pre id="hello">
+        All rights reserved</pre>
+</footer>
+</body>
+</html>

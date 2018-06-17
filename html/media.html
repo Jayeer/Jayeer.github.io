@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="../css/Style.css">
+        <title>New</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+              integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+              integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+                integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+                crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a href="#" class="navbar-brand">Справочник по HTML
+                    </a>
+                </div>
+
+                <div>
+                    <ul class="nav navbar-nav">
+                        <li><a href="../index.html">Главная</a></li>
+                        <li><a href="lists.html">Списки</a></li>
+                        <li class="active"><a href="media.html">Медиа</a></li>
+                        <li><a href="form.html">Формы</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <body>
+    <p>Тег <b>&lttable&gt</b> добавляет на сайт таблицу.</p>
+    <hr>
+    <p>Тег <b>&lttr&gt</b> ,это контейнер для добавления ячеек в таблицу.</p>
+    <hr>
+    <p>Тег <b>&lttd&gt</b>добавляет ячейку в таблицу.</p>
+    <hr>
+    <p>Атрибут тегов td , tr и table <b>bgcolor</b> обозначает цвет фона.</p>
+    <hr>
+    <p>Атрибут тега table <b>cellpadding </b>означает отступ от ячейки до её содержимого.</p>
+    <hr>
+    <p>Тег <b>&ltaudio&gt</b> позволяет проигрывать аудиофайлы на сайте.</p>
+    <p>Атрибут тегов &ltvideo&gt и &ltaudio&gt <b>controls</b> добавляет возможность контролировать воспроизведение аудио и видео (увеличивать и уменьшать громкость , перематывать и т.д.).</p>
+    <hr>
+    <p><b></b></p>
+    <hr>
+    <p><b></b></p>
+    <hr>
+    <p><b></b></p>
+    <hr>
+    <p><b></b></p>
+    <hr>
+    <p><b></b></p>
+    <hr>
+    <p><b></b></p>
+    <hr>
+    
+    
+    <input type="button" id="btn_a" value="Показать пример"><a></a>
+    <input type="button" id="btn_r" value="Скрыть пример"><a></a>
+    <div id="ex">
+    </div>
+    <script>
+        $('#btn_a').click(function(){
+            $('#ex').append('<table border="3" bgcolor="White" cellpadding="15px">\n' +
+                '            <caption> Крест </caption>\n' +
+                '            <tbody>\n' +
+                '            <tr>\n' +
+                '                <td>\n' +
+                '                    <img src="../img/smile.png" alt="Smile" width="50" height="50">\n' +
+                '                </td>\n' +
+                '                <td bgcolor="CC00FF"></td>\n' +
+                '                <td></td>\n' +
+                '            </tr>\n' +
+                '            <tr bgcolor="00CCFF">\n' +
+                '                <td></td>\n' +
+                '                <td></td>\n' +
+                '                <td></td>\n' +
+                '            </tr>\n' +
+                '            <tr>\n' +
+                '                <td></td>\n' +
+                '                <td bgcolor="#a9a9a9"></td>\n' +
+                '                <td></td>\n' +
+                '            </tr>\n' +
+                '            </tbody>\n' +
+                '        </table>\n' +
+                '        <audio controls\n' +
+                '               preload="metadata">\n' +
+                '            <source src="../Music/Pirates.mp3"\n' +
+                '            type="audio/mpeg">\n' +
+                '            Ваш брацузер не поддерживает этот формат\n' +
+                '        </audio>\n' +
+                '        <video controls width="800" height="600"\n' +
+                '        poster="../img/joda.jpg" preload="metadata">\n' +
+                '            <source\n' +
+                '            src="../Video/Мотивация%20к%20кодингу.mp4"\n' +
+                '            type="video/mp4;">\n' +
+                '        </video>')
+        });
+    </script>
+    <script>
+        jQuery('#btn_r').click(function(){
+            $('#ex').empty();
+        });
+    </script>
+    </body>
+</html>

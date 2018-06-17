@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>form</title>
+    <link rel="stylesheet" href="../css/Style.css">
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<header>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="#" class="navbar-brand">Справочник по HTML
+                </a>
+            </div>
+
+            <div>
+                <ul class="nav navbar-nav">
+                    <li><a href="../index.html">Главная</a></li>
+                    <li><a href="lists.html">Списки</a></li>
+                    <li><a href="media.html">Медиа</a></li>
+                    <li class="active"><a href="form.html">Формы</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<body>
+<p>Тег <b>&ltform&gt</b> нужен для добавления на сайт формы.</p>
+<hr>
+<p>Тег<b>&ltinput&gt</b> нужен для добавления на сайт поля ввода или checkbox`а</p>
+<hr>
+<p>Атрибут тега form <b>type</b> означает тип ввода</p>
+<hr>
+<p>Атрибут тега form <b>type=""</b></p>
+<hr>
+<p><b></b></p>
+<hr>
+<p><b></b></p>
+<hr>
+<p><b></b></p>
+<input type="button" id="btn_a" value="Показать пример"><a></a>
+<input type="button" id="btn_r" value="Скрыть пример"><a></a>
+<div id="ex">
+</div>
+<script>
+    $('#btn_a').click(function(){
+        $('#ex').append('<form action="mailto:illicibi01gmail.com"\n' +
+            '        method="get" enctype="text/plain"\n' +
+            '        accept-charset="windows-1251">\n' +
+            '            <p>\n' +
+            '                <b>Как по вашему расшифровывается аббревиатура "ОС"?</b></p>\n' +
+            '            <p>\n' +
+            '                <input type="radio"\n' +
+            '                name="answear"\n' +
+            '                value="a1">Офицерскй состав<br>\n' +
+            '                <input type="checkbox" name="answear"\n' +
+            '                value="a2">Операционная система<br>\n' +
+            '                <input type="radio" name="answear"\n' +
+            '                value="a3">Большой полосатый мух</p>\n' +
+            '            <p><input type="submit" value="Send"></p>\n' +
+            '        </form>\n' +
+            '        <form autocomplete="on" name="form1">\n' +
+            '            <p>Имя: <input name="user" placeholder="Имя"></p>\n' +
+            '            <p>Пароль:<input name="pass" type="password"\n' +
+            '            placeholder="Пароль"></p>\n' +
+            '            <p><input type="submit" value="Enter"></p>\n' +
+            '        </form>\n' +
+            '        <form action="../index.html" target="_blank"\n' +
+            '        autocomplete="on">\n' +
+            '            <p>Имя:<input required placeholder="Имя"></p>\n' +
+            '            <p>Ваш email:<input type="email" required placeholder="Ваш email"></p>\n' +
+            '            <p>Сайт:<input type="url"\n' +
+            '            required placeholder="Сайт"></p>\n' +
+            '            <p><input type="submit"></p>\n' +
+            '        </form>\n' +
+            '        <form name="test" method="post" action="list.html">\n' +
+            '            <p><b><input type="text" size="40"></b>\n' +
+            '            <p>Комментарий <br>\n' +
+            '            <textarea name="comment" cols="40" rows="3" placeholder="comment"></textarea>\n' +
+            '            <p><input type="submit" value="Отправить">\n' +
+            '            <input type="reset" value="Очистить"></p>\n' +
+            '        </form>')
+    });
+</script>
+<script>
+    jQuery('#btn_r').click(function(){
+        $('#ex').empty();
+    });
+</script>
+</body>
+</html>

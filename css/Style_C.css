@@ -1,0 +1,77 @@
+#content {
+    border: 1px solid #bebfb3;
+    border-radius: 15px;
+}
+
+/*текст и заголовки*/
+p + a{ /*свойтво применится только если эти теги будут стоять рядом*/
+    color: #e8ebe6;
+    text-decoration: none;
+}
+p + a:visited {
+    color: #dbdcce;
+    text-decoration: none;
+}
+p + a:hover {
+    color: #93948a;
+}
+a {
+    text-decoration: none;}
+p {
+    color: #8d8d8d;
+    margin: 0;
+    text-align: center;
+}
+h1 , h2 , h3 , h4 , h5 , h6 {
+    color: #000;
+    text-align: center;
+}
+pre {
+    background-color: #b9aa9f;
+    border: 1px solid #cccccc;
+}
+
+/*списки*/
+ul {
+    text-align: center;
+    color: #383a44;
+}
+li {
+    list-style-type: none;
+    font-size: 11pt;
+}
+
+/*Кнопочка*/
+.span-shadow {
+    float: right;
+    position: fixed;
+    z-index: 101;
+    text-align: center;
+}
+.span-shadow span {
+    display: inline-block;
+    margin: 15px;
+    padding: 20px 30px;
+    cursor: pointer;
+    border-radius: 35px;
+    color: white;
+    transition: 0.387s linear;
+    float: right;
+}
+.span-shadow span{
+    background: #c800fe;}
+.span-shadow span:hover {
+    box-shadow: 200px 0 0 0 rgba(0,0,0,.3) inset;}
+
+/*Подвал*/
+footer {
+    background-color: #3b3c73;
+    height: 150px;
+}
+footer p {
+    color: #e8ebe6;
+    margin-top: 80px;
+}
+footer .container-fluid {
+    text-align: center;
+}
