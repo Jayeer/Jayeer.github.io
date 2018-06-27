@@ -1,32 +1,5 @@
-/*@import url('https://fonts.googleapis.com/css?family=Indie+Flower');*/
-/*@import url('https://fonts.googleapis.com/css?family=Overpass+Mono');*/
-/*@import url('https://fonts.googleapis.com/css?family=Bungee+Shade');*/
-/* Подключение внешнего шрифта*/
-
-/*
-@font-face {
-    font-family: IndieFlower; !* Имя шрифта *!
-    src: url(../font/IndieFlower.ttf); !* Путь к файлу со шрифтом *!
-}
-P {
-    font-family: IndieFlower, serif;
-}
-*/
-
-/* Форматируем элемент <div>, который представляет верхний колонтитул
-(как блок с рамкой и синей заливкой). */
-/*header{
-    background-color: #7695FE;
-    border: thin #1a2699 solid;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 10px;
-    text-align: center;
-}*/
-
-/* Форматируем все заголовки <h1> в элементе <div>
-верхнего колонтитула (заголовок статьи). */
 body{
+    font-family: sans-serif;
     background-color: azure;
     border: thin #369993 solid;
     border-radius: 50px;
